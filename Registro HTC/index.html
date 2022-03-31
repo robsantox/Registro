@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Registro</title>
+  <title>Registre-se</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;500;700 & display=swap" rel="stylesheet">
@@ -12,23 +12,25 @@
 
 
 <body>
-  <section class="container">
+  <section class="container-register">
 
-    <form id="register">
+    <form class="form">
       <h1 class="title">Faça seu cadastro</h1>
 
-      <div class="field">
-        <label for="name-field">Nome completo</label>
-        <input type="text" id="name-field" placeholder="Digite seu nome completo" required>
+      <div class="box">
+        <label class="label-field" for="name-field">Nome completo</label>
+        <input type="text" id="name-field" class="field-input" placeholder="Digite seu nome completo" required>
       </div>
+
       <div class="double-box">
-        <div class="field">
-          <label for="date-field">Data de Nascimento</label>
-          <input type="date" id="date-field" required>
+        <div class="box space-between">
+          <label class="label-field">Data de Nascimento</label>
+          <input type="date" class="field-input" required>
         </div>
-        <div class="field">
-          <label>País<span id="asterisk">*</span></label>
-          <select class="country">
+
+        <div class="box space-between">
+          <label class="label-field">País<span id="asterisk">*</span></label>
+          <select class="select">
             <option selected disabled value="">Selecionar</option>
             <option>Brasil</option>
             <option>Argentina</option>
@@ -38,41 +40,49 @@
         </div>
       </div>
 
-      <div>
-        <span>Gênero:</span>
-        <div class="genre">
-          <div class="genre-align">
+
+      <div class="box-gener">
+        <span class="genre-title">Gênero:</span>
+        <div class="options-genre">
+          <div class="select-genre">
             <input type="radio" name="input-genre" id="feminine">
             <label class="genre-align">Feminino</label>
           </div>
-          <div class="genre-align">
+          <div class="select-genre">
             <input type="radio" name="input-genre" id="masculine">
             <label class="genre-align">Masculino</label>
           </div>
-          <div class="genre-align">
+          <div class="select-genre">
             <input type="radio" name="input-genre" id="not-declare">
             <label class="genre-align">Não declarar</label>
           </div>
         </div>
       </div>
-      <div class="field">
+
+      <div class="box">
         <label class="label-field" for="email-field">E-mail</label>
-        <input type="email" id="email-field" placeholder="Digite seu e-mail" required>
-        <label class="label-field" for="password-field">Senha</label>
-        <input type="password" id="password-field" placeholder="Crie uma senha" required>
-        <label class="label-field" for="confirm-field">Confirme sua senha</label>
-        <input type="password" id="confirm-field" placeholder="Confirmar senha" required>
+        <input type="email" id="email-field" class="field-input" placeholder="Digite seu e-mail" required>
       </div>
+
+      <div class="box">
+        <label class="label-field" for="password-field">Senha</label>
+        <input type="password" id="password-field" class="field-input" placeholder="Crie uma senha" required>
+      </div>
+
+      <div class="box">
+        <label class="label-field" for="confirm-field">Confirme sua senha</label>
+        <input type="password" id="confirm-field" class="field-input" placeholder="Confirmar senha" required>
+      </div>
+
+
+
       <div class="terms">
-        <div>
-          <input type="checkbox" class="checkbox-field" required>
-        </div>
-        <div>
-          <p>Aceito os <a href="#">termos e condições</a> e concordo com as <a href="#">políticas de privacidade</a> do Hall To Code.</p>
-        </div>
+
+        <input type="checkbox" class="checkbox-field" required>
+        <p>Aceito os <a class="accept" href="#">termos e condições</a> e concordo com as <a class="accept" href="#">políticas de privacidade</a> do Hall To Code.</p>
       </div>
       <button class="button">Cadastrar</button>
-      <p class="get-in">Já tem uma conta no Hall To Code? <a class="enter" href="/login.html">Entre agora</a>
+      <p class="account">Já tem uma conta no Hall To Code? <a class="anchor" href="/login.html">Entre agora</a>
       </p>
     </form>
   </section>
